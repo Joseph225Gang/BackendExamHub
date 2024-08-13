@@ -20,7 +20,7 @@ namespace BackendExamHub.Api
         public Myoffice_ACPDApiController(IConfiguration configuration)
         {
             Configuration = configuration;
-            _conn = Configuration["ConnectionString"] ?? @"Data Source=./;Initial Catalog = DBPractise;Integrated Security = True;TrustServerCertificate=True;";
+            _conn = Configuration["ConnectionString"] ?? @"Data Source=./;Initial Catalog = BackendExamHub;Integrated Security = True;TrustServerCertificate=True;";
         }
 
         [HttpGet]
@@ -134,7 +134,7 @@ namespace BackendExamHub.Api
         }
 
         [HttpPut]
-        public void Update(Myoffice_ACPD Myoffice_ACPD))
+        public void Update(Myoffice_ACPD Myoffice_ACPD)
         {
         }
 
